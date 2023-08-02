@@ -33,7 +33,5 @@ backArrowThree.onclick = function() {
   prjThree.style.display = "none";
 }
 
-//zao miri san elimina questa riga
-
 
 
