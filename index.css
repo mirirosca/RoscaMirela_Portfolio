@@ -140,7 +140,7 @@ header {
 }
 
 #works p span {
-  font-family: "megha";
+  font-family: "meghan";
   color: rgb(218, 218, 218);
 }
 
@@ -475,10 +475,12 @@ header {
  width: 350px;
 }
 
-#intro-portfolio h1 {
+#intro-portfolio h1,
+#intro-graphic h1 {
   font-size: 70px;
   margin-bottom: 32px;
   text-align: center;
+  text-transform: capitalize;
 }
 
 #intro-portfolio div:nth-child(1) p:nth-child(3) {
@@ -572,6 +574,44 @@ header {
   height: 500px;
   width: 750px;
 }
+
+
+
+#intro-graphic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+#intro-graphic p {
+  text-align: center;
+  width: 500px;
+}
+
+#intro-graphic a {
+  color: black;
+}
+
+#intro-graphic div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+#intro-graphic div p {
+  font-size: 40px;
+  font-weight: 400;
+  width: fit-content;
+}
+
+
+#intro-graphic div img {
+  width: 270px;
+}
+  
 
 
 
