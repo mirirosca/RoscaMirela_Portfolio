@@ -475,8 +475,7 @@ header {
  width: 350px;
 }
 
-#intro-portfolio h1,
-#intro-graphic h1 {
+#intro-portfolio h1 {
   font-size: 70px;
   margin-bottom: 32px;
   text-align: center;
@@ -585,31 +584,51 @@ header {
   gap: 16px;
 }
 
+#intro-graphic h1 {
+  font-size: 70px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#intro-graphic h2 {
+  text-align: center;
+}
+  
+
+#intro-graphic h2 span {
+  background-color: rgb(1,140,115);
+  background-image: linear-gradient(45deg, rgba(1,140,115,1) 0%, rgba(7,228,153,1) 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
 #intro-graphic p {
   text-align: center;
-  width: 500px;
+  width: max-content(700px);
 }
 
 #intro-graphic a {
   color: black;
 }
 
-#intro-graphic div {
+#intro-graphic > div {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 32px;
+  margin-bottom: 32px;
 }
 
-#intro-graphic div p {
+#intro-graphic > div p {
   font-size: 40px;
   font-weight: 400;
   width: fit-content;
 }
 
 
-#intro-graphic div img {
-  width: 270px;
+#intro-graphic > div img {
+  width: 250px;
 }
   
 
