@@ -118,8 +118,6 @@ header {
   width: 180px;
 }
 
-
-
 #intro {
   display: flex;
   justify-content: center;
@@ -173,7 +171,8 @@ header {
 .project-three::before {
   content: "";
   position: absolute;
-  background-color: black;
+  background-color: rgb(250, 248, 245);
+  box-shadow: 0px 10px 7px  black;
   height: 596px;
   width: 2px;
 }
@@ -182,23 +181,27 @@ header {
 .project-two::after,
 .project-three::after {
   position: absolute;
-  top: 0;
-  margin-left: 16px;
+  top: 70px;
+  left: -50px;
   font-family: "tommy made";
-  font-size: 70px;
+  font-size: 400px;
   font-weight: 300;
+  z-index: -1;
 }
 
 .project-one::after {
-  content: "01";
+  content: "1";
+  color: rgb(152, 156, 82);
 }
 
 .project-two::after {
-  content: "02";
+  content: "2";
+  color: rgb(192, 134, 192);
 }
 
 .project-three::after {
-  content: "03";
+  content: "3";
+  color: rgb(136, 174, 208);
 }
 
 .projects h3,
@@ -298,15 +301,15 @@ header {
 }
 
 .project-one:hover button {
-  background-color: rgb(243, 247, 162);
+  background-color: rgb(152, 156, 82);
 }
 
 .project-two:hover button {
-  background-color: rgb(254, 188, 254);
+  background-color: rgb(192, 134, 192);
 }
 
 .project-three:hover button {
-  background-color: rgb(169, 211, 247);
+  background-color: rgb(136, 174, 208);
 }
 
 .project-one:hover .linguaggi li,
@@ -345,8 +348,10 @@ header {
   .project-one::after,
   .project-two::after,
   .project-three::after {
-    font-size: 68px;
-    right: 0;
+    font-size: 350px;
+    left: -40px;
+    top: -10px;
+    z-index: -1;
   }
 
   .project-one::before,
@@ -774,35 +779,3 @@ header {
   color: rgb(123, 122, 122);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.about {
-  background-color: rgb(192, 185, 171);
-  height: 700px;
-  width: 100%;
-  margin: 82px 0;
-}
-
-.title-two {
-  padding: 40px 80px 16px 80px;
-  font-size: 80px;
-  font-family: "meghan";
-  text-transform: uppercase;
-
-  color: rgb(255, 255, 255);
-}
-
-.about p {
-  margin: 0 80px;
-  color: white;
-}
