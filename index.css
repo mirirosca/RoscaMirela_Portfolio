@@ -35,7 +35,7 @@ header {
   top: 0;
   right: 0;
   width: 100%;
-  background-color: rgb(250, 248, 245);;
+  background-color: rgb(176, 195, 213);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,8 +44,8 @@ header {
 }
 
 .logo {
-  font-size: 1.3rem;
-  text-transform: uppercase;
+  font-size: 18px;
+  text-transform: capitalize;
 }
 
 .menu-icon {
@@ -84,7 +84,7 @@ header {
   font-weight: 100;
   }
 
-.home div:nth-child(3) {
+.home div:nth-child(1) {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,37 +92,53 @@ header {
   margin: 0px 32px;
 }
 
-.home div:nth-child(3) p {
+.home div:nth-child(1) p {
   text-align: center;
   color: rgb(176, 175, 175);
 }
 
-.home div:nth-child(3) p:nth-child(1) {
+.home div:nth-child(1) p:nth-child(1) {
   margin-bottom: 44px;
 }
 
-.home div:nth-child(3) p:nth-child(3) {
+.home div:nth-child(1) p:nth-child(3) {
   margin-top: 44px;
   margin-bottom: 0;
 }
 
-.foto {
-  height: 500px;
-  width: 200px;
+.home div:nth-child(2) {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  border-radius: 48% 52% 44% 56% / 63% 40% 60% 37%;
   overflow: hidden;
+  position: relative;
 }
 
-.foto:nth-child(1),
-.foto:nth-child(5)  {
-  height: 450px;
-  width: 180px;
+.home div:nth-child(2) img {
+  width: 400px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.project-section {
+  margin-bottom: 104px;
 }
 
 #intro {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+}
+
+#intro p {
+  text-align: center;
+  max-width: 550px;
 }
 
 #works {
@@ -131,15 +147,15 @@ header {
 }
 
 #works p {
-  font-family: "meghan";
   font-size: 60px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   white-space: nowrap;
+  font-weight: 300;
 }
 
 #works p span {
-  font-family: "meghan";
   color: rgb(218, 218, 218);
+  font-weight: 300;
 }
 
 .projects {
@@ -163,7 +179,7 @@ header {
 .project-two div:nth-child(2),
 .project-three div:nth-child(2) {
   position: absolute;
-  top: 105px;
+  top: 60px;
 }
 
 .project-one::before,
@@ -191,17 +207,17 @@ header {
 
 .project-one::after {
   content: "1";
-  color: rgb(152, 156, 82);
+  color: rgb(143, 183, 206);
 }
 
 .project-two::after {
   content: "2";
-  color: rgb(192, 134, 192);
+  color: rgb(123, 157, 177);
 }
 
 .project-three::after {
   content: "3";
-  color: rgb(136, 174, 208);
+  color: rgb(92, 132, 167);
 }
 
 .projects h3,
@@ -215,108 +231,32 @@ header {
   color: rgb(110, 106, 96);;
 }
 
-.decoration {
-  width: 100%;
-  height: 596px;
-  transform: scale(0.7);
-  position: absolute;
-  right: -150%;
-  transition: 0.3s 0.1s;
-}
-
-.project-one img,
-.project-two img,
-.project-three img {
-  position: absolute;
-  bottom: 140px;
-
-}
-
-.project-one img,
-.project-three img {
-  right: 6%;
-  width: 370px;
-}
-
-.project-two img {
-  right: 8%;
-  width: 330px;
-}
-
-.linguaggi {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1px;
-  height: 96px;
-  width: 100%;
-  position: absolute;
-  bottom: 16px;
-}
-
-.linguaggi ul {
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-}
-
-.linguaggi li {
-  text-transform: capitalize;
-  font-weight: 400;
-  font-size: 20px;
-  list-style: disc;
-  color: transparent;
-  transition: 0.3s 0.1s;
-}
-
 .project-button {
+  position: absolute;
+  bottom: 32px;
+  left: 33%;
   border-radius: 8px;
   width: fit-content;
-  text-transform: uppercase;
 }
 
 .project-button,
 .project-button,
 .project-button {
   transition: 0.3s 0.1s;
-}
-
-.project-one:hover .decoration {
-  transform: scale(1);
-  background-color: rgb(254, 255, 237);
-  right: 0;
-}
-
-.project-two:hover .decoration {
-  transform: scale(1);
-  background-color: rgb(254, 246, 254);
-  right: 0;
-}
-
-.project-three:hover .decoration {
-  transform: scale(1);
-  background-color: rgb(239, 247, 254);
-  right: 0;
 }
 
 .project-one:hover button {
-  background-color: rgb(152, 156, 82);
+  background-color: rgb(143, 183, 206);
 }
 
 .project-two:hover button {
-  background-color: rgb(192, 134, 192);
+  background-color: rgb(123, 157, 177);
 }
 
 .project-three:hover button {
-  background-color: rgb(136, 174, 208);
+  background-color: rgb(92, 132, 167);
 }
 
-.project-one:hover .linguaggi li,
-.project-two:hover .linguaggi li,
-.project-three:hover .linguaggi li{
-  color: rgb(0, 0, 0);
-}
 
 @media ( max-width: 992px) {
 
@@ -360,39 +300,6 @@ header {
   height: 364px;
   }
 
-  .decoration {
-    height: 364px;
-    width: 100%;
-  }
-
-  .project-one img,
-  .project-three img {
-    top: 72px;
-    left: 48px;
-    width: 400px;
-  }
-
-  .project-two img {
-    top: 90px;
-    left: 48px;
-    width: 400px;
-  }
-
-  .linguaggi {
-    height: 130px;
-    bottom: 120px;
-  }
-
-  .linguaggi ul{
-    position: absolute;
-    right: 62px;
-    top: 8px;
-  }
-
-  .linguaggi li {
-    font-size: 18px;
-  }
-
   .project-button {
     font-size: 18px;
     border-radius: 12px;
@@ -403,38 +310,6 @@ header {
 }
 
 @media ( max-width: 768px) {
-
-  .decoration {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .project-one img,
-  .project-three img {
-    position: static;
-    width: 320px;
-  }
-
-  .project-two img {
-    position: static;
-    width: 300px;
-  }
-
-  .linguaggi {
-    height: 90px;
-    bottom: 0;
-  }
-
-  .linguaggi ul {
-    position: static;
-    gap: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .linguaggi li {
-    font-size: 14px;
-  }
   
   .project-button {
     border-radius: 8px;
@@ -779,3 +654,151 @@ header {
   color: rgb(123, 122, 122);
 }
 
+
+
+
+.about-section {
+  height: fit-content;
+  background-color: rgb(242, 252, 255);
+  margin: 0 160px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.about-section h2 {
+  margin: 64px 0 32px 0;
+  font-size: 93px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.about-section h3 {
+  font-size: 75px;
+  margin: 48px 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+#intro-about {
+  max-width: 600px;
+  margin-bottom: 32px;
+}
+
+.about-section div:nth-child(1) p {
+  text-align: center;
+}
+
+.linguaggi {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 730px;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+
+.linguaggi div {
+  min-width: 115px;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  position: relative;
+}
+
+.linguaggi img {
+  width: 35px;
+  transition: 0.2s 0.15s;
+}
+
+.linguaggi p {
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: 0.2s 0.15s;
+  color: rgb(131, 129, 129);
+  padding: 0;
+  margin: 0;
+}
+
+.linguaggi div:nth-child(1):hover p {
+  color: rgb(190, 55, 6);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(1):hover img {
+  width: 44px;
+}
+
+.linguaggi div:nth-child(2):hover p {
+  color: rgb(20, 116, 176);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(2):hover img {
+  width: 44px;
+}
+
+.linguaggi div:nth-child(3):hover p {
+  color: rgb(185, 168, 13);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(3):hover img {
+  width: 44px;
+}
+.linguaggi div:nth-child(4):hover p {
+  color: rgb(202, 48, 112);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(4):hover img {
+  width: 44px;
+}
+
+.linguaggi div:nth-child(5):hover p {
+  color: rgb(88, 20, 133);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(5):hover img {
+  width: 44px;
+}
+
+.linguaggi div:nth-child(6):hover p {
+  color: rgb(35, 17, 115);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(6):hover img {
+  width: 44px;
+}
+
+.linguaggi div:nth-child(7):hover p {
+  color: rgb(117, 18, 130);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(7):hover img {
+  width: 44px;
+}
+
+.linguaggi div:nth-child(8):hover p {
+  color: rgb(172, 103, 25);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(8):hover img {
+  width: 44px;
+}
+
+
+footer {
+  height: 300px;
+  background-color: rgb(176, 195, 213);
+}
