@@ -9,6 +9,7 @@ btnOne.onclick = function(){
   prjOne.style.display = "flex";
 };
 
+
 btnTwo.onclick = function(){
   prjTwo.style.display = "flex";
 };
@@ -17,21 +18,7 @@ btnThree.onclick = function(){
   prjThree.style.display = "flex";
 };
 
-const backArrowOne = document.getElementById("back-home-one");
-const backArrowTwo = document.getElementById("back-home-two");
-const backArrowThree = document.getElementById("back-home-three");
 
-backArrowOne.onclick = function() {
-  prjOne.style.display = "none";
-}
-
-backArrowTwo.onclick = function() {
-  prjTwo.style.display = "none";
-}
-
-backArrowThree.onclick = function() {
-  prjThree.style.display = "none";
-}
 
 
 

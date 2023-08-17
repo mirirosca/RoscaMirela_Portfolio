@@ -1,0 +1,113 @@
+#intro-portfolio {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 80px;
+}
+
+#intro-portfolio div:nth-child(1) {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 350px;
+}
+
+#intro-portfolio h1 {
+  font-size: 70px;
+  margin-bottom: 32px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#intro-portfolio div:nth-child(1) p:nth-child(3) {
+  margin: 32px 0 16px 0;
+  text-align: center;
+}
+
+#intro-portfolio button {
+  width: fit-content;
+}
+
+#codice {
+  width: 750px;
+  height: 460px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-image: url(./immagini/cornice.png);
+  background-repeat: no-repeat;
+  background-size: 800px 565.71px;
+  
+}
+
+#codice img:nth-child(1) {
+  position: absolute;
+  z-index: -1;
+  left: 33px;
+  top: -23px;
+}
+
+.project-view h2 {
+  font-size: 55px;
+  text-transform: capitalize;
+  margin-bottom: 32px;
+}
+
+#step-portoflio {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+#step-portoflio div {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#step-portoflio h3 {
+  text-transform: capitalize;
+}
+
+#step-portoflio div:nth-child(1) h3 {
+  color: rgb(197, 169, 223);
+}
+
+#step-portoflio div:nth-child(2) h3 {
+  color: rgb(216, 164, 172);
+}
+
+#step-portoflio div:nth-child(3) h3 {
+  color: rgb(163, 208, 223);
+}
+
+#step-portoflio p{
+  text-align: center;
+}
+
+#step-portoflio img {
+  width: 80px;
+  margin: 32px 0;
+}
+
+#wireframing-step {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+#wireframing-step p {
+  width: 400px;
+}
+
+.swiper.wireframe {
+  height: 500px;
+  width: 750px;
+}

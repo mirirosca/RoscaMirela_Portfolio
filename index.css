@@ -239,8 +239,6 @@ header {
   width: fit-content;
 }
 
-.project-button,
-.project-button,
 .project-button {
   transition: 0.3s 0.1s;
 }
@@ -255,6 +253,11 @@ header {
 
 .project-three:hover button {
   background-color: rgb(92, 132, 167);
+}
+
+.project-button a {
+  text-decoration: none;
+  color: black;
 }
 
 
@@ -319,10 +322,10 @@ header {
 }
 
 .project-view {
+  
   height: 100vh;
   width: 100%;
   padding: 80px 160px;
-  display: none;
   flex-direction: column;
   align-items: center;
   gap: 0;
@@ -338,279 +341,6 @@ header {
 .project-view p {
   margin-bottom: 0;
 }
-
-#intro-portfolio {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 80px;
-  margin-bottom: 80px;
-}
-
-#intro-portfolio div:nth-child(1) {
- display: flex;
- flex-direction: column;
- align-items: center;
- width: 350px;
-}
-
-#intro-portfolio h1 {
-  font-size: 70px;
-  margin-bottom: 32px;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-#intro-portfolio div:nth-child(1) p:nth-child(3) {
-  margin: 32px 0 16px 0;
-  text-align: center;
-}
-
-#intro-portfolio button {
-  width: fit-content;
-}
-
-#codice {
-  width: 750px;
-  height: 460px;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  background-image: url(./immagini/cornice.png);
-  background-repeat: no-repeat;
-  background-size: 800px 565.71px;
-  
-}
-
-#codice img:nth-child(1) {
-  position: absolute;
-  z-index: -1;
-  left: 33px;
-  top: -23px;
-}
-
-.project-view h2 {
-  font-size: 55px;
-  text-transform: capitalize;
-  margin-bottom: 32px;
-}
-
-#step-portoflio {
-  width: 1000px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 32px;
-  margin-bottom: 64px;
-}
-
-#step-portoflio div {
-  width: 270px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#step-portoflio h3 {
-  text-transform: capitalize;
-}
-
-#step-portoflio div:nth-child(1) h3 {
-  color: rgb(197, 169, 223);
-}
-
-#step-portoflio div:nth-child(2) h3 {
-  color: rgb(216, 164, 172);
-}
-
-#step-portoflio div:nth-child(3) h3 {
-  color: rgb(163, 208, 223);
-}
-
-#step-portoflio p{
-  text-align: center;
-}
-
-#step-portoflio img {
-  width: 80px;
-  margin: 32px 0;
-}
-
-#wireframing-step {
-  display: flex;
-  justify-content: space-between;
-  gap: 32px;
-}
-
-#wireframing-step p {
-  width: 400px;
-}
-
-.swiper.wireframe {
-  height: 500px;
-  width: 750px;
-}
-
-
-
-
-#intro-graphic {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  margin-bottom: 80px;
-}
-
-#intro-graphic h1 {
-  font-size: 70px;
-  text-align: left;
-  text-transform: capitalize;
-}
-
-
-#intro-graphic a {
-  color: black;
-}
-
-#intro-graphic div:nth-child(1) {
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-#intro-graphic div:nth-child(1) p {
-  text-align: left;
-  width: 400px;
-}
-
-#intro-graphic div:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
-
-#intro-graphic div:nth-child(2) img {
-  width: 600px;
-  margin-top: 16px;
-}
-
-#intro-graphic div:nth-child(2) p {
-  font-size: 32px;
-}
-
-#intro-graphic div:nth-child(2) p span{
-  background-color: rgb(1,140,115);
-  background-image: linear-gradient(45deg, rgba(1,140,115,1) 0%, rgba(7,228,153,1) 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-}
-
-#conoscenze-graphic {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 32px;
-  margin-bottom: 60px;
-}
-
-#conoscenze-graphic div:nth-child(1) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-
-#conoscenze-graphic div:nth-child(1) img {
-  width: 60px;
-}
-
-#conoscenze-graphic div:nth-child(1) div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-}
-
-#conoscenze-graphic div:nth-child(1) h3 {
-  width: 250px;
-}
-
-#conoscenze-graphic div:nth-child(1) div:nth-child(1) h3{
-  color: rgba(1,140,115,1);
-}
-
-#conoscenze-graphic div:nth-child(1) div:nth-child(2) h3{
-  color: rgb(48, 181, 191);
-}
-
-#conoscenze-graphic div:nth-child(1) div:nth-child(3) h3{
-  color: rgb(41, 164, 217);
-}
-
-#conoscenze-graphic div:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  align-items: right;
-  gap: 16px;
-}
-
-#conoscenze-graphic div:nth-child(2) h2,
-#conoscenze-graphic div:nth-child(2) p {
-  text-align: right;
-  width: 600px;
-}
-
-#slideshow-graphic {
-  margin-top: 62px;
-}
-
-.swiper.graphic {
-  background-color: rgb(250, 248, 245);
-  width: 900px;
-  height: 506px;
-  object-fit: contain;
-}
-
-.swiper.graphic img {
-  width: 800px;
-}
-
-.swiper-slide div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.swiper-slide h4 {
-  margin-bottom: 16px;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
 
 
 

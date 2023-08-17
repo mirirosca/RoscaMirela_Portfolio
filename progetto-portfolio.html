@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progetto-portfolio</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./progetto-portfolio.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+<body>
+  <section>
+    <div class="project-view" id="portfolio-project">
+      <div id="back-home-one">
+        <img src="./immagini/arrow-icon.png" alt="arrow-icon">
+        <p><a href="./index.html">Go Back home</a></p>
+      </div>
+      <div id="intro-portfolio">
+        <div>
+          <h1>The<br>portfolio<br>project</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Fusce neque massa, dapibus id massa quis, pharetra tempor neque. 
+            Cras porta tempus tortor at vehicula. Quisque vestibulum odio in 
+            sapien pharetra, vel vestibulum eros scelerisque.
+          </p>
+          <p>&#8595; Guarda il codice completo &#8595;</p>
+          <button><a href="https://github.com/mirirosca/RoscaMirela_Portfolio.git" target="_blank">FULL CODE</a></button>
+        </div>
+        <div id="codice">
+          <img src="./immagini/codice-02.png" alt="">
+        </div>
+      </div>
+      <h2>step by step</h2>
+      <div id="step-portoflio">
+        <div>
+          <h3>moodboard</h3>
+          <img src="./icone/moodboard.png" alt="icona-moodboard">
+          <p>Il primo passo nella creazione del design è stato
+            raggruppare <strong>idee, immagini, font e colori</strong> che rappresentino 
+            al meglio <strong>la mia personalità</strong> e  <strong>il concept</strong> del mio prodotto. 
+          </p>
+        </div>
+        <div>
+          <h3>mobile-first</h3>
+          <img src="./icone/mobile-app.png" alt="icona-telefono">
+          <p>Ho iniziato a progettare prima il <strong>design per schermi più piccoli</strong>,
+            cosi da dare priorità agli elementi più importanti; successivamente 
+            sono passata a schermi più grandi.
+          </p>
+        </div>
+        <div>
+          <h3>coding phase</h3>
+          <img src="./icone/programming.png" alt="icona-computer">
+          <p>Ho messo in atto tutte le <strong>conoscenze acquisiste durante i miei studi</strong>
+            e ho iniziato a dar vita al mio sito utilizzando <strong>Html, Css e Javascript</strong>.
+          </p>
+        </div>
+      </div>
+      <div id="wireframing-step">
+        <div class="swiper wireframe">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./immagini/moodboard1-02.png" alt=""></div>
+            <div class="swiper-slide"><img src="./immagini/wireframe-03.png" alt=""></div>
+            <div class="swiper-slide"><img src="./immagini/foto-computer-codice.png" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Fusce neque massa, dapibus id massa quis, pharetra tempor neque. 
+          Cras porta tempus tortor at vehicula. Quisque vestibulum odio in 
+          sapien pharetra, vel vestibulum eros scelerisque.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <a href="https://www.flaticon.com/free-icons/graphic-design" title="graphic design icons">Graphic design icons created by Freepik - Flaticon</a>
+  <a href="https://www.flaticon.com/free-icons/branding" title="branding icons">Branding icons created by Stockes Design - Flaticon</a>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  
+</body>
+</html>
