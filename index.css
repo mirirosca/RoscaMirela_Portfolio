@@ -1,10 +1,3 @@
-@font-face {
-  font-family: "made tommy" 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-family: "meghan";
-  src: url(./font/made-tommy-regular-personal-use.otf);
-  src: url(./font/Meghan.ttf);
-}
-
 *,
 *::before,
 *::after {
@@ -13,9 +6,30 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "made tommy";
-  color: black;
   scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+p,
+a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  word-spacing: 3px;
+  line-height: 23px;
+}
+
+span {
+  font-family: 'Raleway', sans-serif;
+  word-spacing: 3px;
+  line-height: 23px;
 }
 
 button{
@@ -75,13 +89,12 @@ header {
 
 .home h1 {
   text-align: center;
-  font-family: "made tommy";
   text-transform: uppercase;
   font-size: 120px;
+  font-weight: 200;
   margin-bottom: 0;
   line-height: 94px;
   letter-spacing: 5px;
-  font-weight: 300;
   }
 
 .home div:nth-child(1) {
@@ -106,7 +119,15 @@ header {
   margin-bottom: 0;
 }
 
-.home div:nth-child(2) {
+.home div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.home div:last-child div:nth-child(1) {
   width: 400px;
   height: 400px;
   background-color: black;
@@ -115,13 +136,38 @@ header {
   position: relative;
 }
 
-.home div:nth-child(2) img {
+.home div:last-child div:nth-child(1) img {
   width: 400px;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
 }
+
+.home div:last-child div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.icona {
+  font-size: 24px;
+  transition: 0s 0s;
+  color: black;
+  padding: 3px;
+}
+
+.icona:hover {
+  color: rgb(143, 194, 212);
+}
+
+.icona:active {
+  color: rgb(45, 102, 122);
+}
+
+
 
 @media ( max-width: 992px) {
 
@@ -166,14 +212,14 @@ header {
 .about-section h2 {
   margin: 64px 0 32px 0;
   font-size: 70px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
 }
 
 .about-section h3 {
   font-size: 55px;
   margin: 48px 0;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -293,11 +339,6 @@ header {
 }
 
 
-footer {
-  height: 300px;
-  background-color: rgb(176, 195, 213);
-}
-
 @media ( max-width: 992px) {
 
   .home {
@@ -405,7 +446,6 @@ footer {
   position: absolute;
   top: 70px;
   left: -50px;
-  font-family: "tommy made";
   font-size: 400px;
   font-weight: 300;
   z-index: -1;
@@ -426,14 +466,19 @@ footer {
   color: rgb(92, 132, 167);
 }
 
-.projects h3,
-.projects h4 {
+.projects h4,
+.projects h5 {
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   margin-left: 16px;
 }
 
 .projects h4 {
+  font-size: 28px;
+}
+
+.projects h5 {
+  font-size: 18px;
   color: rgb(110, 106, 96);;
 }
 
@@ -585,5 +630,10 @@ footer {
   color: rgb(123, 122, 122);
 }
 
+
+footer {
+  height: 300px;
+  background-color: rgb(176, 195, 213);
+}
 
 
