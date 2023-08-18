@@ -1,113 +1,163 @@
-#intro-portfolio {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 80px;
-  margin-bottom: 80px;
-}
-
-#intro-portfolio div:nth-child(1) {
- display: flex;
- flex-direction: column;
- align-items: center;
- width: 350px;
-}
-
-#intro-portfolio h1 {
-  font-size: 70px;
-  margin-bottom: 32px;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-#intro-portfolio div:nth-child(1) p:nth-child(3) {
-  margin: 32px 0 16px 0;
-  text-align: center;
-}
-
-#intro-portfolio button {
-  width: fit-content;
-}
-
-#codice {
-  width: 750px;
-  height: 460px;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  background-image: url(./immagini/cornice.png);
-  background-repeat: no-repeat;
-  background-size: 800px 565.71px;
-  
-}
-
-#codice img:nth-child(1) {
-  position: absolute;
-  z-index: -1;
-  left: 33px;
-  top: -23px;
-}
-
-.project-view h2 {
-  font-size: 55px;
-  text-transform: capitalize;
-  margin-bottom: 32px;
-}
-
-#step-portoflio {
-  width: 1000px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 32px;
-  margin-bottom: 64px;
-}
-
-#step-portoflio div {
-  width: 270px;
+.intro-portfolio {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 64px 160px;
 }
 
-#step-portoflio h3 {
-  text-transform: capitalize;
+h1 {
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 16px;
 }
 
-#step-portoflio div:nth-child(1) h3 {
-  color: rgb(197, 169, 223);
-}
-
-#step-portoflio div:nth-child(2) h3 {
-  color: rgb(216, 164, 172);
-}
-
-#step-portoflio div:nth-child(3) h3 {
-  color: rgb(163, 208, 223);
-}
-
-#step-portoflio p{
+.intro-portfolio > p {
+  width: 500px;
   text-align: center;
+  margin-bottom: 16px;
 }
 
-#step-portoflio img {
-  width: 80px;
-  margin: 32px 0;
+h2 {
+  font-size: 50px;
+  font-weight: 400; 
+  margin: 64px 0 40px 0;
 }
 
-#wireframing-step {
+.step {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 84px;
+  flex-wrap: wrap;
+  margin-bottom: 160px;
+}
+
+#moodboard-phase p:nth-child(1) {
+  text-align: left;
+  line-height: 1,35;
+}
+
+#moodboard-phase p:nth-child(1) span {
+  font-weight: 500;
+}
+
+#moodboard-phase > div{
+  width: fit-content;
+  height: 370px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+#moodboard-phase > div p {
+  text-align: left;
+  color: rgb(105, 106, 108);
+}
+
+#moodboard-phase div div:first-child {
+  height: 370px;
+  width: 160px;
+  position: relative;
+}
+
+#moodboard-phase div div:first-child::before {
+  content: "";
+  background-color: rgb(139, 183, 191);
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#moodboard-phase div div:last-child {
+  height: 370px;
+  width: 160px;
+  position: relative;
+}
+
+#moodboard-phase div div:last-child::before {
+  content: "";
+  background-color: rgb(227, 227, 210);
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#moodboard-phase > p {
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+#moodboard-phase > p:nth-child(1):before {
+  content: "1";
+  font-size: 200px;
+  position: absolute;
+  font-family: "made thommy";
+  left: -100px;
+  bottom: -30px;
+}
+
+#moodboard-phase img {
+  width: 160px;
+  height: 260px;
+}
+
+#wireframe-phase { 
+  gap: 64px;
+  align-items: flex-end;
+}
+
+#wireframe-phase p {
+  margin-bottom: 64px;
+  text-align: center;
+  max-width: 300px;
+  position: relative;
+}
+
+#wireframe-phase p::before {
+  content: "2";
+  font-size: 180px;
+  position: absolute;
+  font-family: "made thommy";
+  bottom: 190px;
+  left: 25%;
+  right: 25%;
+}
+
+#wireframe-phase div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 500px;
   gap: 32px;
 }
 
-#wireframing-step p {
-  width: 400px;
+#wireframe-phase div img {
+  width: 280px;
 }
 
-.swiper.wireframe {
-  height: 500px;
-  width: 750px;
+#code-phase > p {
+  max-width: 500px;
+  position: relative;
+  margin-top: 164px;
+  text-align: center;
+}
+
+#code-phase > p::before {
+  content: "3";
+  font-size: 170px;
+  position: absolute;
+  font-family: "made thommy";
+  bottom: 60px;
+  left: 25%;
+  right: 25%;
 }

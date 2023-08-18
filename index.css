@@ -81,7 +81,7 @@ header {
   margin-bottom: 0;
   line-height: 94px;
   letter-spacing: 5px;
-  font-weight: 100;
+  font-weight: 300;
   }
 
 .home div:nth-child(1) {
@@ -123,10 +123,232 @@ header {
   left: 0;
 }
 
+@media ( max-width: 992px) {
+
+  .home {
+    flex-direction: column;
+    margin: 84px 80px 64px 80px;
+    height: 938px;
+  }
+
+  .home h1 {
+    font-size: 90px;
+  }
+
+  .home div:nth-child(1) p:nth-child(1) {
+    margin-bottom: 28px;
+  }
+
+  .home div:nth-child(2) {
+    width: 350px;
+    height: 350px;
+  }
+
+  .home div:nth-child(1) p:nth-child(3) {
+    margin-top: 28px;
+  }
+}
+
+
+
+
+.about-section {
+  height: fit-content;
+  margin: 0 160px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(242, 252, 255);
+  margin-bottom: 64px;
+}
+
+.about-section h2 {
+  margin: 64px 0 32px 0;
+  font-size: 70px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.about-section h3 {
+  font-size: 55px;
+  margin: 48px 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+#intro-about {
+  max-width: 600px;
+  margin-bottom: 32px;
+}
+
+.about-section div:nth-child(1) p {
+  text-align: center;
+}
+
+.linguaggi {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 730px;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+
+.linguaggi div {
+  min-width: 115px;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  position: relative;
+}
+
+.linguaggi img {
+  width: 35px;
+  transition: 0.2s 0.15s;
+}
+
+.linguaggi p {
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: 0.2s 0.15s;
+  color: rgb(131, 129, 129);
+  padding: 0;
+  margin: 0;
+}
+
+.linguaggi div:nth-child(1):hover p {
+  color: rgb(190, 55, 6);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(1):hover img {
+  width: 44px;
+}
+
+.linguaggi div:nth-child(2):hover p {
+  color: rgb(20, 116, 176);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(2):hover img {
+  width: 44px;
+}
+
+.linguaggi div:nth-child(3):hover p {
+  color: rgb(185, 168, 13);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(3):hover img {
+  width: 44px;
+}
+.linguaggi div:nth-child(4):hover p {
+  color: rgb(202, 48, 112);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(4):hover img {
+  width: 44px;
+}
+
+.linguaggi div:nth-child(5):hover p {
+  color: rgb(88, 20, 133);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(5):hover img {
+  width: 44px;
+}
+
+.linguaggi div:nth-child(6):hover p {
+  color: rgb(35, 17, 115);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(6):hover img {
+  width: 44px;
+}
+
+.linguaggi div:nth-child(7):hover p {
+  color: rgb(117, 18, 130);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(7):hover img {
+  width: 44px;
+}
+
+.linguaggi div:nth-child(8):hover p {
+  color: rgb(172, 103, 25);
+  font-size: 20px;
+}
+
+.linguaggi div:nth-child(8):hover img {
+  width: 44px;
+}
+
+
+footer {
+  height: 300px;
+  background-color: rgb(176, 195, 213);
+}
+
+@media ( max-width: 992px) {
+
+  .home {
+    flex-direction: column;
+    margin: 84px 80px 64px 80px;
+    height: 938px;
+  }
+
+  .home h1 {
+    font-size: 90px;
+  }
+
+  .home div:nth-child(1) p:nth-child(1) {
+    margin-bottom: 28px;
+  }
+
+  .home div:nth-child(2) {
+    width: 350px;
+    height: 350px;
+  }
+
+  .home div:nth-child(1) p:nth-child(3) {
+    margin-top: 28px;
+  }
+
+  .about-section {
+    margin: 0 80px;
+  }
+}
+
+
+
 
 .project-section {
   margin-bottom: 104px;
 }
+
+#works {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+#works h4 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
 
 #intro {
   display: flex;
@@ -138,25 +360,9 @@ header {
 
 #intro p {
   text-align: center;
-  max-width: 550px;
+  max-width: 650px;
 }
 
-#works {
-  overflow-x: hidden;
-  margin: 16px 0;
-}
-
-#works p {
-  font-size: 60px;
-  text-transform: capitalize;
-  white-space: nowrap;
-  font-weight: 300;
-}
-
-#works p span {
-  color: rgb(218, 218, 218);
-  font-weight: 300;
-}
 
 .projects {
   margin: 0 160px;
@@ -346,15 +552,7 @@ header {
 
 
 
-
-
-
-
-
-
-#back-home-one,
-#back-home-two,
-#back-home-three {
+#back-home {
   position: fixed;
   bottom: 60px;
   left: 80px;
@@ -365,170 +563,27 @@ header {
   z-index: 100;
 }
 
-#back-home-one,
-#back-home-two,
-#back-home-three :hover {
+#back-home:hover {
   cursor: pointer;
 }
 
-#back-home-one img,
-#back-home-two img,
-#back-home-three img{
+#back-home img{
   width: 20px;
 }
 
+#back-home p {
+  padding: 0;
+  margin: 0;
+}
 
-#back-home-one p:hover,
-#back-home-two p:hover,
-#back-home-three p:hover {
+#back-home a {
+  text-decoration: none;
+  color: black;
+}
+
+#back-home a:hover {
   color: rgb(123, 122, 122);
 }
 
 
 
-
-.about-section {
-  height: fit-content;
-  background-color: rgb(242, 252, 255);
-  margin: 0 160px;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 64px;
-}
-
-.about-section h2 {
-  margin: 64px 0 32px 0;
-  font-size: 93px;
-  font-weight: 300;
-  text-align: center;
-}
-
-.about-section h3 {
-  font-size: 75px;
-  margin: 48px 0;
-  font-weight: 300;
-  text-align: center;
-}
-
-#intro-about {
-  max-width: 600px;
-  margin-bottom: 32px;
-}
-
-.about-section div:nth-child(1) p {
-  text-align: center;
-}
-
-.linguaggi {
-  display: flex;
-  gap: 40px;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 730px;
-  flex-wrap: wrap;
-  margin-bottom: 64px;
-}
-
-.linguaggi div {
-  min-width: 115px;
-  height: 115px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
-  position: relative;
-}
-
-.linguaggi img {
-  width: 35px;
-  transition: 0.2s 0.15s;
-}
-
-.linguaggi p {
-  font-size: 16px;
-  text-transform: capitalize;
-  transition: 0.2s 0.15s;
-  color: rgb(131, 129, 129);
-  padding: 0;
-  margin: 0;
-}
-
-.linguaggi div:nth-child(1):hover p {
-  color: rgb(190, 55, 6);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(1):hover img {
-  width: 44px;
-}
-
-.linguaggi div:nth-child(2):hover p {
-  color: rgb(20, 116, 176);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(2):hover img {
-  width: 44px;
-}
-
-.linguaggi div:nth-child(3):hover p {
-  color: rgb(185, 168, 13);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(3):hover img {
-  width: 44px;
-}
-.linguaggi div:nth-child(4):hover p {
-  color: rgb(202, 48, 112);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(4):hover img {
-  width: 44px;
-}
-
-.linguaggi div:nth-child(5):hover p {
-  color: rgb(88, 20, 133);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(5):hover img {
-  width: 44px;
-}
-
-.linguaggi div:nth-child(6):hover p {
-  color: rgb(35, 17, 115);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(6):hover img {
-  width: 44px;
-}
-
-.linguaggi div:nth-child(7):hover p {
-  color: rgb(117, 18, 130);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(7):hover img {
-  width: 44px;
-}
-
-.linguaggi div:nth-child(8):hover p {
-  color: rgb(172, 103, 25);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(8):hover img {
-  width: 44px;
-}
-
-
-footer {
-  height: 300px;
-  background-color: rgb(176, 195, 213);
-}
