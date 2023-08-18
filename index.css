@@ -33,15 +33,17 @@ span {
 }
 
 button{
-  padding: 8px 24px;
+  padding: 8px 20px;
   border: none;
-  border-radius: 50%;
+  border-radius: 6px;
 }
 
 header li a,
 header a {
   text-decoration: none;
   color: black;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 header {
@@ -49,20 +51,50 @@ header {
   top: 0;
   right: 0;
   width: 100%;
+  height: 62px;
+  padding: 0 80px;
   background-color: rgb(176, 195, 213);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 9px 40px 9px 40px;
   z-index: 100;
+  box-shadow: 0px 6px 10px rgba(29, 63, 75, 0.2);
 }
 
 .logo {
-  font-size: 18px;
-  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  padding-right: 197px;
 }
 
-.menu-icon {
+.logo:hover {
+  color: rgb(45, 102, 122);
+}
+
+.logo:active {
+  color: rgb(29, 63, 75);
+}
+
+header div:nth-child(2) {
+  position: relative;
+}
+
+header div:nth-child(2) button {
+  padding: 5px;
+  background-color: transparent;
+  position: absolute;
+  top: -13px;
+  cursor: pointer;
+}
+
+header div:nth-child(2) i,
+ .menu-icon {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+header div:nth-child(2) button:nth-child(2) {
   display: none;
 }
 
@@ -70,13 +102,56 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 28px;
   margin-bottom: 0;
 }
 
 .nav-bar li {
-  padding-left: 16px ;
-  font-size: 1rem;
+  font-size: 16px;
+  padding: 4px;
 }
+
+.nav-bar li a {
+  font-size: 16px;
+}
+
+.nav-bar li:nth-child(1) a:hover,
+.nav-bar li:nth-child(2) a:hover {
+  color: rgb(45, 102, 122);
+}
+
+.nav-bar li:nth-child(1) a:active,
+.nav-bar li:nth-child(2) a:active {
+  color: rgb(29, 63, 75);
+}
+
+header div:last-child button {
+  background-color: transparent;
+  border: 2px solid rgb(29, 63, 75);
+  box-shadow: 4px 4px 6px rgba(29, 63, 75, 0.2);
+}
+
+header div:last-child button:hover {
+  border: 2px solid rgba(29, 63, 75, 0);
+  background-color: rgba(29, 63, 75, 0.463);
+}
+
+header div:last-child button:active {
+  background-color: rgba(29, 63, 75, 0.591);
+}
+
+@media ( max-width: 992px){
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-bar::before {
+    display: block;
+  }
+
+}
+
+
 
 .home {
   display: flex;
@@ -134,6 +209,7 @@ header {
   border-radius: 48% 52% 44% 56% / 63% 40% 60% 37%;
   overflow: hidden;
   position: relative;
+  box-shadow: 0px 4px 6px rgba(29, 63, 75, 0.2);
 }
 
 .home div:last-child div:nth-child(1) img {
@@ -154,7 +230,6 @@ header {
 
 .icona {
   font-size: 24px;
-  transition: 0s 0s;
   color: black;
   padding: 3px;
 }
@@ -174,7 +249,7 @@ header {
   .home {
     flex-direction: column;
     margin: 84px 80px 64px 80px;
-    height: 938px;
+    height: 1200px;
   }
 
   .home h1 {
@@ -185,13 +260,21 @@ header {
     margin-bottom: 28px;
   }
 
-  .home div:nth-child(2) {
-    width: 350px;
-    height: 350px;
+  .home div:last-child div:nth-child(1) {
+    width: 450px;
+    height: 450px;
+  }
+
+  .home div:last-child div:nth-child(1) img {
+    width: 450px;
   }
 
   .home div:nth-child(1) p:nth-child(3) {
     margin-top: 28px;
+  }
+
+  .home div:last-child {
+    flex-direction: column;
   }
 }
 
@@ -207,6 +290,7 @@ header {
   align-items: center;
   background-color: rgb(242, 252, 255);
   margin-bottom: 64px;
+  box-shadow: 0px 6px 10px rgba(29, 63, 75, 0.2);
 }
 
 .about-section h2 {
