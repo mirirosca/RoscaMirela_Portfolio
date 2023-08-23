@@ -9,6 +9,29 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --primary-color: rgb(250, 248, 245);
+  --secondary-color: rgb(0, 0, 0);
+  --tertiary-color: rgb(180, 192, 201);
+  --quaternary-color: rgb(228, 238, 241);
+  --quinary-color: rgb(143, 183, 206);
+  --senary-color: rgb(123, 157, 177);
+  --septenary-color: rgb(92, 132, 167);
+  --octonary-color: rgb(176, 175, 175);
+}
+
+
+.dark-theme {
+  --primary-color: rgb(33, 35, 38);
+  --secondary-color: rgb(255, 255, 255);
+  --tertiary-color: rgb(43, 53, 63);
+  --quaternary-color: rgb(67, 81, 93);
+  --quinary-color: rgb(129, 141, 159);
+  --senary-color: rgb(93, 105, 126);
+  --septenary-color: rgb(70, 83, 113);
+  --octonary-color: rgb(233, 228, 228);
+}
+
 h1,
 h2,
 h3,
@@ -16,6 +39,7 @@ h4,
 h5,
 h6 {
   font-family: 'Raleway', sans-serif;
+  color: var(--secondary-color);
 }
 
 p,
@@ -24,6 +48,7 @@ a {
   font-weight: 500;
   word-spacing: 3px;
   line-height: 23px;
+  color: var(--secondary-color);
 }
 
 span {
@@ -33,7 +58,7 @@ span {
 }
 
 button{
-  padding: 8px 20px;
+  padding: 6px 14px;
   border: none;
   border-radius: 6px;
 }
@@ -41,7 +66,7 @@ button{
 header li a,
 header a {
   text-decoration: none;
-  color: black;
+  color: var(--secondary-color);
   font-weight: 600;
   font-size: 16px;
 }
@@ -53,7 +78,7 @@ header {
   width: 100%;
   height: 62px;
   padding: 0 80px;
-  background-color: rgb(176, 195, 213);
+  background-color: var(--tertiary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +89,6 @@ header {
 .logo {
   font-size: 20px;
   font-weight: 700;
-  padding-right: 197px;
 }
 
 .logo:hover {
@@ -80,7 +104,7 @@ header div:nth-child(2) {
 }
 
 header div:nth-child(2) button {
-  padding: 5px;
+  padding: 10px;
   background-color: transparent;
   position: absolute;
   top: -13px;
@@ -88,15 +112,24 @@ header div:nth-child(2) button {
 }
 
 header div:nth-child(2) i,
- .menu-icon {
+.icona-menu,
+.icona-close {
   font-size: 18px;
   padding: 0;
   margin: 0;
 }
 
-header div:nth-child(2) button:nth-child(2) {
+header div:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  right: 25%;
+}
+
+#sun-icon {
+  color: rgb(255, 255, 255);
   display: none;
 }
+
 
 .nav-bar {
   display: flex;
@@ -125,28 +158,125 @@ header div:nth-child(2) button:nth-child(2) {
   color: rgb(29, 63, 75);
 }
 
-header div:last-child button {
+header div:nth-child(3) button {
   background-color: transparent;
   border: 2px solid rgb(29, 63, 75);
   box-shadow: 4px 4px 6px rgba(29, 63, 75, 0.2);
 }
 
-header div:last-child button:hover {
+header div:nth-child(3) button:hover {
   border: 2px solid rgba(29, 63, 75, 0);
   background-color: rgba(29, 63, 75, 0.463);
 }
 
-header div:last-child button:active {
+header div:nth-child(3) button:active {
   background-color: rgba(29, 63, 75, 0.591);
 }
 
+.icona-menu {
+  position: absolute;
+  right: -20px;
+  z-index: 100;
+  padding: 4px;
+}
+
+.icona-close {
+  position: absolute;
+  padding: 4px;
+  right: 16px;
+  top: 16px;
+  font-size: 20px;
+}
+
+#menu-div {
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: none;
+}
+
+#menu-div::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 1000vh;
+  background-color: rgba(204, 228, 239, 0.107);
+  right: 0;
+  top: 0;
+  -webkit-backdrop-filter:blur(1.5px);
+  backdrop-filter: blur(1.5px);
+}
+
+.menu {
+  position: fixed;
+  right: -300px;
+  top: 0;
+  width: 300px;
+  height: 1000vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  padding: 164px 0px 64px 64px;
+  background-color: rgb(122, 143, 166);
+  transition: 0.4s;
+  box-shadow: -15px 0px 26px -13px rgb(29, 63, 75, 0.4) ;
+}
+
+.menu p,
+.menu a {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+
+.menu div:last-child {
+  position: fixed;
+  bottom: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.menu div:last-child .icona {
+  font-size: 32px;
+}
+
+
 @media ( max-width: 992px){
+
   .nav-bar {
     display: none;
   }
 
-  .nav-bar::before {
-    display: block;
+  .icona-menu {
+    right: 80px;
+  }
+
+  .icona-close {
+    right: 36px;
+  }
+
+  .menu div:last-child .icona {
+    font-size: 32px;
+  }
+
+}
+
+@media ( max-width: 576px) {
+
+  .menu {
+    width: 100%;
+    align-items: center;
+    padding-left: 0;
+    gap: 40px;
+  }
+
+  .menu p,
+  .menu a {
+    font-size: 32px;
   }
 
 }
@@ -182,7 +312,7 @@ header div:last-child button:active {
 
 .home div:nth-child(1) p {
   text-align: center;
-  color: rgb(176, 175, 175);
+  color: var(--octonary-color);
 }
 
 .home div:nth-child(1) p:nth-child(1) {
@@ -205,7 +335,7 @@ header div:last-child button:active {
 .home div:last-child div:nth-child(1) {
   width: 400px;
   height: 400px;
-  background-color: black;
+  background-color: var(--secondary-color);
   border-radius: 48% 52% 44% 56% / 63% 40% 60% 37%;
   overflow: hidden;
   position: relative;
@@ -230,18 +360,21 @@ header div:last-child button:active {
 
 .icona {
   font-size: 24px;
-  color: black;
+  color: var(--secondary-color);
   padding: 3px;
 }
 
-.icona:hover {
+.icona:hover,
+.menu p:hover,
+.menu a:hover {
   color: rgb(143, 194, 212);
 }
 
-.icona:active {
+.icona:active,
+.menu p:active,
+.menu a:active{
   color: rgb(45, 102, 122);
 }
-
 
 
 @media ( max-width: 992px) {
@@ -260,25 +393,29 @@ header div:last-child button:active {
     margin-bottom: 28px;
   }
 
+  .home div:last-child {
+    flex-direction: column;
+  }
+
   .home div:last-child div:nth-child(1) {
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
   }
 
   .home div:last-child div:nth-child(1) img {
-    width: 450px;
+    width: 350px;
+    height: 350px;
   }
 
   .home div:nth-child(1) p:nth-child(3) {
     margin-top: 28px;
   }
 
-  .home div:last-child {
-    flex-direction: column;
+  .home div:last-child div:nth-child(2) {
+    height: fit-content;
   }
+
 }
-
-
 
 
 .about-section {
@@ -288,7 +425,7 @@ header div:last-child button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(242, 252, 255);
+  background-color: var(--quaternary-color);
   margin-bottom: 64px;
   box-shadow: 0px 6px 10px rgba(29, 63, 75, 0.2);
 }
@@ -346,7 +483,7 @@ header div:last-child button:active {
   font-size: 16px;
   text-transform: capitalize;
   transition: 0.2s 0.15s;
-  color: rgb(131, 129, 129);
+  color: var(--octonary-color);
   padding: 0;
   margin: 0;
 }
@@ -456,6 +593,8 @@ header div:last-child button:active {
 
 
 
+
+
 .project-section {
   margin-bottom: 104px;
 }
@@ -500,7 +639,7 @@ header div:last-child button:active {
 .project-two,
 .project-three {
   width: 33%;
-  height: 596px;
+  height: 496px;
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -518,9 +657,9 @@ header div:last-child button:active {
 .project-three::before {
   content: "";
   position: absolute;
-  background-color: rgb(250, 248, 245);
-  box-shadow: 0px 10px 7px  black;
-  height: 596px;
+  background-color: var(--primary-color);
+  box-shadow: 0px 10px 7px  var(--septenary-color);
+  height: 496px;
   width: 2px;
 }
 
@@ -537,36 +676,37 @@ header div:last-child button:active {
 
 .project-one::after {
   content: "1";
-  color: rgb(143, 183, 206);
+  color: var(--quinary-color);
 }
 
 .project-two::after {
   content: "2";
-  color: rgb(123, 157, 177);
+  color: var(--senary-color);
 }
 
 .project-three::after {
   content: "3";
-  color: rgb(92, 132, 167);
+  color: var(--septenary-color);
 }
 
-.projects h4,
+.projects p,
 .projects h5 {
   text-transform: uppercase;
   font-weight: 500;
   margin-left: 16px;
 }
 
-.projects h4 {
-  font-size: 28px;
+.projects h5 {
+  font-size: 30px;
 }
 
-.projects h5 {
-  font-size: 18px;
-  color: rgb(110, 106, 96);;
+.projects p {
+  font-size: 22px;
+  color: var(--octonary-color)
 }
 
 .project-button {
+  background-color: rgba(176, 175, 175, 0.201);
   position: absolute;
   bottom: 32px;
   left: 33%;
@@ -575,36 +715,40 @@ header div:last-child button:active {
 }
 
 .project-button {
-  transition: 0.3s 0.1s;
+  display: none;
 }
 
 .project-one:hover button {
-  background-color: rgb(143, 183, 206);
+  background-color: var(--quinary-color);
+  display: block;
 }
 
 .project-two:hover button {
-  background-color: rgb(123, 157, 177);
+  background-color: var(--senary-color);
+  display: block;
 }
 
 .project-three:hover button {
-  background-color: rgb(92, 132, 167);
+  background-color: var(--septenary-color);
+  display: block;
 }
 
 .project-button a {
   text-decoration: none;
-  color: black;
+  color: var(--secondary-color);
 }
 
 
 @media ( max-width: 992px) {
 
-  #works p,
-  #works p span{
-    font-size: 58px;
+  .works {
+    margin-bottom: 32px;
   }
 
   .projects {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 12px;
   }
 
@@ -618,43 +762,79 @@ header div:last-child button:active {
   .project-one,
   .project-two,
   .project-three {
-    width: 100%;
-    height: 364px;
-    margin-bottom: 32px;
+    width: 450px;
+    height: 400px;
+    margin-bottom: 84px;
+    z-index: 3;
+  }
+
+  .projects p,
+  .projects h5 {
+    text-align: center;
+    line-height: 32px;
+    margin-left: 0;
+  }
+
+  .projects h5 {
+    margin-bottom: 8px;
+    font-size: 34px;
+  }
+
+
+  .project-one::after {
+    content: "01";
+  }
+
+  .project-two::after {
+    content: "02";
+  }
+
+  .project-three::after {
+    content: "03";
   }
 
   .project-one::after,
   .project-two::after,
   .project-three::after {
-    font-size: 350px;
-    left: -40px;
-    top: -10px;
-    z-index: -1;
+    font-size: 300px;
+    left: 100px;
+    top: 170px;
+    z-index: -2;
   }
 
   .project-one::before,
   .project-two::before,
   .project-three::before {
-  height: 364px;
+    width: 100%;
+    height: 2px;
+    transform: rotate(180deg);
+    box-shadow: 0px 10px 4px  var(--secondary-color);
+    bottom: -10px;
+    z-index: -1;
   }
 
   .project-button {
+    display: block;
     font-size: 18px;
     border-radius: 12px;
     position: absolute;
-    bottom: 8px;
-    right: 102px;
+    bottom: 230px;
+    left: 36%;
   }
+
+  #btn-one {
+    background-color: var(--quinary-color);
+  }
+
+  #btn-two {
+    background-color: var(--senary-color);
+  }
+  #btn-three {
+    background-color: var(--septenary-color);
+  }
+
 }
 
-@media ( max-width: 768px) {
-  
-  .project-button {
-    border-radius: 8px;
-    font-size: 12px;
-    position: static;
-  }
-}
 
 .project-view {
   
@@ -664,7 +844,7 @@ header div:last-child button:active {
   flex-direction: column;
   align-items: center;
   gap: 0;
-  background-color: rgb(250, 248, 245);
+  background-color: var(--primary-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -707,7 +887,7 @@ header div:last-child button:active {
 
 #back-home a {
   text-decoration: none;
-  color: black;
+  color: var(--secondary-color);
 }
 
 #back-home a:hover {
@@ -716,8 +896,26 @@ header div:last-child button:active {
 
 
 footer {
-  height: 300px;
-  background-color: rgb(176, 195, 213);
+  height: 150px;
+  background-color: var(--tertiary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
+
+footer div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+
 
 

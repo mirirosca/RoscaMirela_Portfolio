@@ -14,21 +14,37 @@
   <title>Document</title>
 </head>
 
-<body style="background-color: rgb(250, 248, 245);">
+<body style="background-color: var(--primary-color);">
   <header>
     <div>
       <a href="./index.html" class="logo">mirela rosca</a>
     </div>
     <div>
-      <button><i class="fa-solid fa-moon"></i></button>
-      <button><i class="fa-solid fa-sun"></i></button>
+      <button><i class="fa-solid fa-moon" id="moon-icon"></i></button>
+      <button><i class="fa-solid fa-sun" id="sun-icon"></i></button>
     </div>
     <div>
       <ul class="nav-bar">
         <li><a href="#">progetti</a></li>
-        <li><a href="#">contatti</a></li>
+        <li><a href="#">contact me</a></li>
         <li><button><a href="">about me</a></button></li>
       </ul>
+    </div>
+    <i class="fa-solid fa-bars icona-menu" id="menu-button"></i>
+    <div id="menu-div">
+      <div class="menu" id="hidden-div">
+        <i class="fa-solid fa-xmark icona-close" id="close-icon"></i>
+        <p><a href="">home</a></p>
+        <p><a href="">progeti</a></p>
+        <p><a href="">about me</a></p>
+        <p><a href="">contact me</a></p>
+        <div>
+          <a href="https://github.com/mirirosca/RoscaMirela_Portfolio.git" target="_blank"><i class="fa-brands fa-github icona"></i></a>
+          <a href="https://www.linkedin.com/in/roscamiri/" target="_blank"><i class="fa-brands fa-linkedin icona"></i></a>
+          <a href="mailto:roscamiri@gmail.com" target="_blank"><i class="fa-regular fa-envelope icona"></i></a>
+          <a href="https://www.instagram.com/mirirosca/" target="_blank"><i class="fa-brands fa-instagram icona"></i></a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -44,7 +60,7 @@
         <img src="./immagini/foto-profilo.jpeg" alt="">
       </div>
       <div>
-       <a href="https://github.com/mirirosca/RoscaMirela_Portfolio.git" target="_blank"><i class="fa-brands fa-github icona"></i></a>
+       <a href="https://github.com/mirirosca" target="_blank"><i class="fa-brands fa-github icona"></i></a>
        <a href="https://www.linkedin.com/in/roscamiri/" target="_blank"><i class="fa-brands fa-linkedin icona"></i></a>
        <a href="mailto:roscamiri@gmail.com" target="_blank"><i class="fa-regular fa-envelope icona"></i></a>
        <a href="https://www.instagram.com/mirirosca/" target="_blank"><i class="fa-brands fa-instagram icona"></i></a>
@@ -82,10 +98,6 @@
         <p>JavaScript</p>
       </div>
       <div>
-        <img src="./icone/sass.png" alt="">
-        <p>SASS</p>
-      </div>
-      <div>
         <img src="./icone/bootstrap.png" alt="">
         <p>bootstrap</p>
       </div>
@@ -120,22 +132,22 @@
     <div class="projects">
       <div class="project-one">
         <div>
-          <h4>personal site</h4>
-          <h5>front end developer <br>portfolio website</h5>
+          <h5>personal site</h5>
+          <p>front end developer <br>portfolio website<p>
         </div>
         <button class="project-button" id="btn-one"><a href="./progetto-portfolio.html">see project</a></button>
       </div>
       <div class="project-two">
         <div>
-          <h4>lifestyle application</h4>
-          <h5>javascript advance<br>application</h5>
+          <h5>lifestyle application</h5>
+          <p>javascript advance<br>application</p>
         </div>
         <button class="project-button" id="btn-two"><a href="./progetto-javascript.html">see project</a></button>
       </div>
       <div class="project-three">
         <div>
-          <h4>meditactive</h4>
-          <h5>progetto grafica<br>brand identity</h5>
+          <h5>meditactive</h5>
+          <p>progetto grafica<br>brand identity</p>
         </div>
         <button class="project-button" id="btn-three"><a href="./progetto-grafica.html">see project</a></button>
       </div>
@@ -144,13 +156,19 @@
 
 
   <footer>
-
+    <div>
+      <a href="https://github.com/mirirosca/RoscaMirela_Portfolio.git" target="_blank"><i class="fa-brands fa-github icona"></i></a>
+      <a href="https://www.linkedin.com/in/roscamiri/" target="_blank"><i class="fa-brands fa-linkedin icona"></i></a>
+      <a href="mailto:roscamiri@gmail.com" target="_blank"><i class="fa-regular fa-envelope icona"></i></a>
+      <a href="https://www.instagram.com/mirirosca/" target="_blank"><i class="fa-brands fa-instagram icona"></i></a>
+    </div>
+      <p><a href=""></a>see attribution</p>
   </footer>
 
 
 
 
-  <a href="https://www.flaticon.com/free-icons/moodboard" title="moodboard icons">Moodboard icons created by Freepik - Flaticon</a>
+  <!-- <a href="https://www.flaticon.com/free-icons/moodboard" title="moodboard icons">Moodboard icons created by Freepik - Flaticon</a>
   <a href="https://www.flaticon.com/free-icons/smartphone" title="smartphone icons">Smartphone icons created by Freepik - Flaticon</a>
   <a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by juicy_fish - Flaticon</a>
   <a href="https://www.freepik.com/free-psd/passion-fashion-signboard-mockup_3891019.htm#page=2&query=mockup&position=4&from_view=keyword&track=sph">Image by rawpixel.com on Freepik</a> 
@@ -161,12 +179,10 @@
   <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>
   <a href="https://www.flaticon.com/free-icons/figma" title="figma icons">Figma icons created by Freepik - Flaticon</a>
   <a href="https://www.flaticon.com/free-icons/graphic-design" title="graphic design icons">Graphic design icons created by Freepik - Flaticon</a>
-  <a href="https://www.flaticon.com/free-icons/sass" title="sass icons">Sass icons created by Freepik - Flaticon</a>
-
-
+  <a href="https://www.flaticon.com/free-icons/sass" title="sass icons">Sass icons created by Freepik - Flaticon</a> -->
 
 
   <script src="./index.js"></script>
- 
+
 </body>
 </html>
