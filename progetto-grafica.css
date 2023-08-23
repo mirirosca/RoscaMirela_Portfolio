@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(250, 248, 245);
+  background-color: var(--primary-color);
   margin: 64px 160px 100px 160px;
 }
 

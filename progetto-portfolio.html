@@ -96,6 +96,12 @@
   <a href="https://www.flaticon.com/free-icons/graphic-design" title="graphic design icons">Graphic design icons created by Freepik - Flaticon</a>
   <a href="https://www.flaticon.com/free-icons/branding" title="branding icons">Branding icons created by Stockes Design - Flaticon</a>
   <script>
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-theme');
+    }
+
     const swiper = new Swiper('.swiper', {
       loop: true,
 

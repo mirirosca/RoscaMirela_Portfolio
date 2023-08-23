@@ -17,5 +17,12 @@
         <p><a href="./index.html">Go Back home</a></p>
       </div>
 
+    <script>
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+      }
+    </script>
+
   </body>
 </html>
