@@ -123,6 +123,7 @@ header div:nth-child(2) {
   position: absolute;
   left: 50%;
   right: 25%;
+  display: none;
 }
 
 #sun-icon {
@@ -431,7 +432,7 @@ header div:nth-child(3) button:active {
 }
 
 .about-section h2 {
-  margin: 64px 0 32px 0;
+  margin: 64px 0 0 0;
   font-size: 70px;
   font-weight: 300;
   text-align: center;
@@ -447,6 +448,15 @@ header div:nth-child(3) button:active {
 #intro-about {
   max-width: 600px;
   margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+#intro-about button {
+  background-color: var(--senary-color);
 }
 
 .about-section div:nth-child(1) p {

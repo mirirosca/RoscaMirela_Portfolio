@@ -7,13 +7,14 @@
 }
 
 h1 {
+  text-align: center;
   font-size: 64px;
   font-weight: 400;
   margin-bottom: 16px;
 }
 
 .intro-portfolio > p {
-  width: 500px;
+  max-width: 500px;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -160,4 +161,42 @@ h2 {
   bottom: 130px;
   left: 25%;
   right: 25%;
+}
+
+@media ( max-width: 992px) {
+
+  #moodboard-phase {
+    margin-bottom: 180px;
+  }
+
+  #wireframe-phase p::before {
+    bottom: 310px;
+  }
+
+  #code-phase > p::before {
+    bottom: 150px;
+  }
+}
+
+@media ( max-width: 576px) {
+
+  p{
+    text-align: center;
+  }
+
+  #moodboard-phase {
+    margin-bottom: 100px;
+  }
+
+  #moodboard-phase > p:nth-child(1):before, 
+  #wireframe-phase p::before,
+  #code-phase > p::before  {
+    display: none;
+  }
+
+  #code-phase > p {
+    margin-top: 0px;
+  }
+
+
 }
