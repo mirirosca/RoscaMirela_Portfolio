@@ -145,15 +145,10 @@
   </div>
   <button id="scrollToTopButton">Torna all'inizio</button>
 
+  <script src="./index.js"></script>
+
   <script>
 
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      document.body.classList.add('dark-theme');
-    }
-
-    const scrollToTopButton = document.getElementById('scrollToTopButton');
-    
     window.addEventListener('scroll', () => {
       if (window.scrollY > 100) {
         scrollToTopButton.style.display = 'block';
@@ -165,15 +160,10 @@
     scrollToTopButton.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+    
   </script>
     
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <a href="https://www.flaticon.com/free-icons/graphic-design" title="graphic design icons">Graphic design icons created by Freepik - Flaticon</a>
-  <a href="https://www.flaticon.com/free-icons/branding" title="branding icons">Branding icons created by Stockes Design - Flaticon</a>
-
-
- 
-  
 </body>
 </html>

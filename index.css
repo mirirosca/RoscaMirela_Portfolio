@@ -1,3 +1,5 @@
+/* general settings */
+
 *,
 *::before,
 *::after {
@@ -21,7 +23,7 @@
 }
 
 
-.dark-theme {
+/* .dark-theme {
   --primary-color: rgb(33, 35, 38);
   --secondary-color: rgb(255, 255, 255);
   --tertiary-color: rgb(43, 53, 63);
@@ -30,7 +32,7 @@
   --senary-color: rgb(93, 105, 126);
   --septenary-color: rgb(70, 83, 113);
   --octonary-color: rgb(233, 228, 228);
-}
+} */
 
 h1,
 h2,
@@ -63,14 +65,7 @@ button{
   border-radius: 6px;
 }
 
-header li a,
-header a {
-  text-decoration: none;
-  color: var(--secondary-color);
-  font-weight: 600;
-  font-size: 16px;
-}
-
+/* header settings */
 header {
   position: fixed;
   top: 0;
@@ -86,6 +81,14 @@ header {
   box-shadow: 0px 6px 10px rgba(29, 63, 75, 0.2);
 }
 
+header li a,
+header a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .logo {
   font-size: 20px;
   font-weight: 700;
@@ -99,8 +102,14 @@ header {
   color: rgb(29, 63, 75);
 }
 
-header div:nth-child(2) {
-  position: relative;
+/* change-theme icon style
+  sun & moon icons
+ */
+
+/* header div:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  right: 25%;
 }
 
 header div:nth-child(2) button {
@@ -111,26 +120,22 @@ header div:nth-child(2) button {
   cursor: pointer;
 }
 
+#sun-icon {
+  color: rgb(255, 255, 255);
+  display: none;
+}
+
 header div:nth-child(2) i,
 .icona-menu,
 .icona-close {
   font-size: 18px;
   padding: 0;
   margin: 0;
-}
+} */
 
-header div:nth-child(2) {
-  position: absolute;
-  left: 50%;
-  right: 25%;
-  display: none;
-}
-
-#sun-icon {
-  color: rgb(255, 255, 255);
-  display: none;
-}
-
+/* third-div in header style 
+  project & contact & about me button
+*/
 
 .nav-bar {
   display: flex;
@@ -145,34 +150,33 @@ header div:nth-child(2) {
   padding: 4px;
 }
 
-.nav-bar li a {
-  font-size: 16px;
-}
-
 .nav-bar li:nth-child(1) a:hover,
 .nav-bar li:nth-child(2) a:hover {
-  color: rgb(45, 102, 122);
+  color: var(--senary-color);
 }
 
 .nav-bar li:nth-child(1) a:active,
 .nav-bar li:nth-child(2) a:active {
-  color: rgb(29, 63, 75);
+  color: var(--septenary-color);
 }
 
-header div:nth-child(3) button {
+.nav-bar button {
   background-color: transparent;
-  border: 2px solid rgb(29, 63, 75);
+  border: 2px solid var(--septenary-color);;
   box-shadow: 4px 4px 6px rgba(29, 63, 75, 0.2);
 }
 
-header div:nth-child(3) button:hover {
+.nav-bar button:hover {
   border: 2px solid rgba(29, 63, 75, 0);
-  background-color: rgba(29, 63, 75, 0.463);
+  background-color: var(--septenary-color);
 }
 
-header div:nth-child(3) button:active {
+.nav-bar button:active {
   background-color: rgba(29, 63, 75, 0.591);
 }
+
+
+/* hidden navbar for smaller didplay */
 
 .icona-menu {
   position: absolute;
@@ -184,8 +188,8 @@ header div:nth-child(3) button:active {
 .icona-close {
   position: absolute;
   padding: 4px;
-  right: 16px;
-  top: 16px;
+  right: 1rem;
+  top: 1rem;
   font-size: 20px;
 }
 
@@ -218,9 +222,9 @@ header div:nth-child(3) button:active {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 32px;
+  gap: 2rem;
   padding: 164px 0px 64px 64px;
-  background-color: rgb(122, 143, 166);
+  background-color: var(--senary-color);
   transition: 0.4s;
   box-shadow: -15px 0px 26px -13px rgb(29, 63, 75, 0.4) ;
 }
@@ -228,23 +232,38 @@ header div:nth-child(3) button:active {
 .menu p,
 .menu a {
   font-size: 24px;
-  text-transform: uppercase;
 }
-
 
 .menu div:last-child {
   position: fixed;
-  bottom: 64px;
+  bottom: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .menu div:last-child .icona {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
+/* media query for responsive navbar */
+
+@media ( max-width: 576px) {
+
+  .menu {
+    width: 100%;
+    align-items: center;
+    padding-left: 0;
+    gap: 40px;
+  }
+
+  .menu p,
+  .menu a {
+    font-size: 2rem;
+  }
+
+}
 
 @media ( max-width: 992px){
 
@@ -261,82 +280,60 @@ header div:nth-child(3) button:active {
   }
 
   .menu div:last-child .icona {
-    font-size: 32px;
-  }
-
-}
-
-@media ( max-width: 576px) {
-
-  .menu {
-    width: 100%;
-    align-items: center;
-    padding-left: 0;
-    gap: 40px;
-  }
-
-  .menu p,
-  .menu a {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
 }
 
 
+/* homepage section */
 
 .home {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 50px 160px 16px 160px;
-  height: 738px;
-  gap: 16px;
+  margin: 50px 160px 16px;
+  height: 100vh;
 }
 
-.home h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 120px;
-  font-weight: 200;
-  margin-bottom: 0;
-  line-height: 94px;
-  letter-spacing: 5px;
-  }
+/* homepage left section */
 
 .home div:nth-child(1) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 600px;
-  margin: 0px 32px;
-}
-
-.home div:nth-child(1) p {
+  gap: 1.5rem;
+  margin: 0px 2rem;
   text-align: center;
-  color: var(--octonary-color);
 }
-
-.home div:nth-child(1) p:nth-child(1) {
-  margin-bottom: 44px;
-}
-
-.home div:nth-child(1) p:nth-child(3) {
-  margin-top: 44px;
+.home h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 200;
   margin-bottom: 0;
+  line-height: 94px;
+  letter-spacing: 5px;
 }
+
+.home h2{
+  text-align: center;
+  font-weight: 300;
+}
+
+/* homepage right section */
 
 .home div:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .home div:last-child div:nth-child(1) {
   width: 400px;
   height: 400px;
-  background-color: var(--secondary-color);
   border-radius: 48% 52% 44% 56% / 63% 40% 60% 37%;
   overflow: hidden;
   position: relative;
@@ -368,30 +365,28 @@ header div:nth-child(3) button:active {
 .icona:hover,
 .menu p:hover,
 .menu a:hover {
-  color: rgb(143, 194, 212);
+  color: var(--senary-color);
 }
 
 .icona:active,
 .menu p:active,
 .menu a:active{
-  color: rgb(45, 102, 122);
+  color: var(--septenary-color);
 }
 
+/* media query for homepage section */
 
 @media ( max-width: 992px) {
 
   .home {
     flex-direction: column;
     margin: 84px 80px 64px 80px;
-    height: 1200px;
+    gap: 2rem;
+    height: 100%;
   }
 
-  .home h1 {
-    font-size: 90px;
-  }
-
-  .home div:nth-child(1) p:nth-child(1) {
-    margin-bottom: 28px;
+  .home div:nth-child(1){
+    gap: 0.5rem;
   }
 
   .home div:last-child {
@@ -399,35 +394,25 @@ header div:nth-child(3) button:active {
   }
 
   .home div:last-child div:nth-child(1) {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
   }
 
   .home div:last-child div:nth-child(1) img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
   }
-
-  .home div:nth-child(1) p:nth-child(3) {
-    margin-top: 28px;
-  }
-
-  .home div:last-child div:nth-child(2) {
-    height: fit-content;
-  }
-
 }
 
-
+/* about me section */
 .about-section {
   height: fit-content;
-  margin: 0 160px;
+  margin: 0 160px 64px;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--quaternary-color);
-  margin-bottom: 64px;
   box-shadow: 0px 6px 10px rgba(29, 63, 75, 0.2);
 }
 
@@ -463,9 +448,11 @@ header div:nth-child(3) button:active {
   text-align: center;
 }
 
+ /* skill & libraries section */
+
 .linguaggi {
   display: flex;
-  gap: 40px;
+  gap: 0.5rem;
   justify-content: space-between;
   align-items: center;
   max-width: 730px;
@@ -474,14 +461,13 @@ header div:nth-child(3) button:active {
 }
 
 .linguaggi div {
-  min-width: 115px;
+  width: 140px;
   height: 115px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 16px;
-  position: relative;
+  gap: 0.5rem;
 }
 
 .linguaggi img {
@@ -490,7 +476,7 @@ header div:nth-child(3) button:active {
 }
 
 .linguaggi p {
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: capitalize;
   transition: 0.2s 0.15s;
   color: var(--octonary-color);
@@ -498,119 +484,46 @@ header div:nth-child(3) button:active {
   margin: 0;
 }
 
-.linguaggi div:nth-child(1):hover p {
-  color: rgb(190, 55, 6);
+.linguaggi div:hover p {
   font-size: 20px;
+  color: var(--secondary-color);
 }
 
-.linguaggi div:nth-child(1):hover img {
-  width: 44px;
+.linguaggi div:hover img {
+  width: 32px;
 }
 
-.linguaggi div:nth-child(2):hover p {
-  color: rgb(20, 116, 176);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(2):hover img {
-  width: 44px;
-}
-
-.linguaggi div:nth-child(3):hover p {
-  color: rgb(185, 168, 13);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(3):hover img {
-  width: 44px;
-}
-.linguaggi div:nth-child(4):hover p {
-  color: rgb(202, 48, 112);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(4):hover img {
-  width: 44px;
-}
-
-.linguaggi div:nth-child(5):hover p {
-  color: rgb(88, 20, 133);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(5):hover img {
-  width: 44px;
-}
-
-.linguaggi div:nth-child(6):hover p {
-  color: rgb(35, 17, 115);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(6):hover img {
-  width: 44px;
-}
-
-.linguaggi div:nth-child(7):hover p {
-  color: rgb(117, 18, 130);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(7):hover img {
-  width: 44px;
-}
-
-.linguaggi div:nth-child(8):hover p {
-  color: rgb(172, 103, 25);
-  font-size: 20px;
-}
-
-.linguaggi div:nth-child(8):hover img {
-  width: 44px;
-}
-
-
-@media ( max-width: 992px) {
-
-  .home {
-    flex-direction: column;
-    margin: 84px 80px 64px 80px;
-    height: 938px;
-  }
-
-  .home h1 {
-    font-size: 90px;
-  }
-
-  .home div:nth-child(1) p:nth-child(1) {
-    margin-bottom: 28px;
-  }
-
-  .home div:nth-child(2) {
-    width: 350px;
-    height: 350px;
-  }
-
-  .home div:nth-child(1) p:nth-child(3) {
-    margin-top: 28px;
-  }
-
+@media ( max-width: 576px){
   .about-section {
-    margin: 0 80px;
+    margin: 0;
+    padding: 2rem;
   }
 }
 
 
+@media ( min-width: 577px) and ( max-width: 768px) {
+  .about-section{
+    margin: 0 60px;
+    padding: 0 2rem;
+  } 
+  
+}
 
+@media (min-width: 769px) and (max-width: 992px) {
+  .about-section{
+    margin: 0 80px;
+    padding: 0 1.5rem;
+  }
+}
 
-
+/* project section - intro */
 
 .project-section {
   margin-bottom: 104px;
 }
 
 #works {
-  margin: 16px 0;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -622,7 +535,6 @@ header div:nth-child(3) button:active {
   font-size: 40px;
   font-weight: 400;
 }
-
 
 #intro {
   display: flex;
@@ -637,6 +549,7 @@ header div:nth-child(3) button:active {
   max-width: 650px;
 }
 
+/* project section - projects */
 
 .projects {
   margin: 0 160px;

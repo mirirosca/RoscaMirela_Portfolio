@@ -36,6 +36,10 @@ h2 {
   margin-bottom: 160px;
 }
 
+#moodboard-phase {
+  margin-bottom: 200px;
+}
+
 #moodboard-phase p:nth-child(1) {
   text-align: left;
   line-height: 1,35;
@@ -49,7 +53,7 @@ h2 {
   width: fit-content;
   height: 370px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 40px;
 }
@@ -163,10 +167,20 @@ h2 {
   right: 25%;
 }
 
+
 @media ( max-width: 992px) {
 
   #moodboard-phase {
-    margin-bottom: 180px;
+    margin-bottom: 100px;
+  }
+
+  #moodboard-phase p:nth-child(1){
+    text-align: center;
+  }
+  
+
+  #wireframe-phase {
+    margin-bottom: 0;
   }
 
   #wireframe-phase p::before {
@@ -176,9 +190,30 @@ h2 {
   #code-phase > p::before {
     bottom: 150px;
   }
+
+  #moodboard-phase > p:nth-child(1):before, 
+  #wireframe-phase p::before,
+  #code-phase > p::before  {
+    display: none;
+  }
+  
+}
+
+@media ( max-width: 768px) {
+  .intro-portfolio {
+    margin: 64px;
+  }
 }
 
 @media ( max-width: 576px) {
+
+  .intro-portfolio {
+    margin: 64px 32px;
+  }
+
+  .step {
+    gap: 32px;
+  }
 
   p{
     text-align: center;
@@ -188,15 +223,37 @@ h2 {
     margin-bottom: 100px;
   }
 
-  #moodboard-phase > p:nth-child(1):before, 
-  #wireframe-phase p::before,
-  #code-phase > p::before  {
-    display: none;
+  #moodboard-phase img {
+    width: 112px;
+    height: 182px;
+  }
+
+  #wireframe-phase div img {
+    width: 180px;
+  }
+
+  #moodboard-phase >div {
+    width: 300px;
+  }
+
+  #moodboard-phase div div:first-child,
+  #moodboard-phase div div:last-child {
+    height: 300px;
+    width: 182px;
+  }
+
+  #moodboard-phase div div:first-child::before,
+  #moodboard-phase div div:last-child::before {
+    width: 112px;
+  }
+
+
+  #wireframe-phase p {
+    margin-bottom: 0;
   }
 
   #code-phase > p {
-    margin-top: 0px;
+    margin-top: 0;
   }
-
 
 }

@@ -63,6 +63,12 @@ body {
 }
 
 @media ( max-width: 768px) {
+
+  body {
+    margin-left: 80px ;
+    margin-right: 80px ;
+  }
+
   .presentazione div {
     width: 600px;
   }

@@ -1,176 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Front End Developer PORTFOLIO">
-  <meta property="og:description" content="Sono una giovane ragazza con la 
-  passione per lo sviluppo di interfaccia web">
-  <link rel="stylesheet" href="./index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Mirela Rosca</title>
+    <meta property="og:title" content="Front End Developer PORTFOLIO">
+    <meta property="og:description" content="Sono una giovane ragazza con la 
+    passione per lo sviluppo di interfaccia web">
 
-  <title>Homepage - Mirela Rosca</title>
-</head>
+    <!-- css & google fonts link -->
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<body style="background-color: var(--primary-color);">
-  <header>
-    <div>
-      <a href="./index.html" class="logo">mirela rosca</a>
-    </div>
-    <div>
-      <button><i class="fa-solid fa-moon" id="moon-icon"></i></button>
-      <button><i class="fa-solid fa-sun" id="sun-icon"></i></button>
-    </div>
-    <div>
-      <ul class="nav-bar">
-        <li><a href="#progetti">progetti</a></li>
-        <li><a href="#footer">contact me</a></li>
-        <li><button><a href="./about-page.html">about me</a></button></li>
-      </ul>
-    </div>
-    <i class="fa-solid fa-bars icona-menu" id="menu-button"></i>
-    <div id="menu-div">
-      <div class="menu" id="hidden-div">
-        <i class="fa-solid fa-xmark icona-close" id="close-icon"></i>
-        <p><a href="./index.html">home</a></p>
-        <p><a href="#progetti">progetti</a></p>
-        <p><a href="./about-page.html">about me</a></p>
-        <p><a href="#footer">contact me</a></p>
-        <div>
-          <a href="https://github.com/mirirosca/RoscaMirela_Portfolio.git" target="_blank"><i class="fa-brands fa-github icona"></i></a>
-          <a href="https://www.linkedin.com/in/roscamiri/" target="_blank"><i class="fa-brands fa-linkedin icona"></i></a>
-          <a href="mailto:roscamiri@gmail.com" target="_blank"><i class="fa-regular fa-envelope icona"></i></a>
+  </head>
+
+  <body style="background-color: var(--primary-color);">
+    <header>
+      <!-- navbar -->
+      <div>
+        <a href="./index.html" class="logo">mirela rosca</a>
+      </div>
+      <!-- <div>
+        <button><i class="fa-solid fa-moon" id="moon-icon"></i></button>
+        <button><i class="fa-solid fa-sun" id="sun-icon"></i></button>
+      </div> -->
+      <div>
+        <ul class="nav-bar">
+          <li><a href="#progetti">progetti</a></li>
+          <li><a href="#footer">contact me</a></li>
+          <li><button><a href="./about-page.html">about me</a></button></li>
+        </ul>
+      </div>
+
+      <!-- hidden navbar for smaller display -->
+      <i class="fa-solid fa-bars icona-menu" id="menu-button"></i>
+      <div id="menu-div">
+        <div class="menu" id="hidden-div">
+          <i class="fa-solid fa-xmark icona-close" id="close-icon"></i>
+          <p><a href="./index.html">home</a></p>
+          <p><a href="#progetti">progetti</a></p>
+          <p><a href="./about-page.html">about me</a></p>
+          <p><a href="#footer">contact me</a></p>
+          <div>
+            <a href="https://github.com/mirirosca/RoscaMirela_Portfolio.git" target="_blank"><i class="fa-brands fa-github icona"></i></a>
+            <a href="https://www.linkedin.com/in/roscamiri/" target="_blank"><i class="fa-brands fa-linkedin icona"></i></a>
+            <a href="mailto:roscamiri@gmail.com" target="_blank"><i class="fa-regular fa-envelope icona"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section class="home">
-    <div>
-      <p>2023</p>
-      <h1>Mirela<br>Rosca</h1>
-      <p>Passionate Digital Technologist</p>
-    </div>
-    <div>
+    <!-- homepage section -->
+    <section class="home">
       <div>
-        <img src="./immagini/foto-profilo.jpeg" alt="">
+        <p>2023</p>
+        <h1>Mirela<br>Rosca</h1>
+        <h2>Font End Developer</h2>
+        <p>**& a very creative person</p>
       </div>
       <div>
-       <a href="https://github.com/mirirosca" target="_blank"><i class="fa-brands fa-github icona"></i></a>
-       <a href="https://www.linkedin.com/in/roscamiri/" target="_blank"><i class="fa-brands fa-linkedin icona"></i></a>
-       <a href="mailto:roscamiri@gmail.com" target="_blank"><i class="fa-regular fa-envelope icona"></i></a>
+        <div>
+          <img src="./immagini/foto-profilo.jpeg" alt="">
+        </div>
+        <div>
+        <a href="https://github.com/mirirosca" target="_blank"><i class="fa-brands fa-github icona"></i></a>
+        <a href="https://www.linkedin.com/in/roscamiri/" target="_blank"><i class="fa-brands fa-linkedin icona"></i></a>
+        <a href="mailto:roscamiri@gmail.com" target="_blank"><i class="fa-regular fa-envelope icona"></i></a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="about-section">
-    <div id="intro-about">
-      <h2>Who am I?</h2>
-      <p><strong>Passionate Digital Technologist di Roma</strong>
-      </p>
+    <!-- about me section -->
 
-      <p>Ciao! Sono una ragazza di 21 anni di Roma. 
-        Mi definisco una persona <strong>intraprendente e organizzata</strong>, 
-        mi piace avere il controllo su ciò che 
-        faccio e sugli eventi che mi circondano. <br> <br>Ho anche una <strong>vena creativa</strong>, che 
-        si esprime in modo particolare attraverso i miei hobby: 
-        adoro <strong>lavorare a maglia e all'uncinetto</strong>. 
-        Queste attività richiedono una precisione e 
-        un'attenzione incredibili, proprio come 
-        nello sviluppo di un'interfaccia web. 
-        <br>
-        Ed è proprio durante queste sfide che provo una grande 
-        soddisfazione nel trasformare le idee dalla mia mente in realtà.
-      </p>
-      <button><a href="./about-page.html">scopri di piu</a></button>
-    </div>
-    <h3>My skills</h3>
-    <div class="linguaggi">
-      <div>
-        <img src="./icone/html.png" alt="">
-        <p>HTML</p>
-      </div>
-      <div>
-        <img src="./icone/css-3.png" alt="">
-        <p>css</p>
-      </div>
-      <div>
-        <img src="./icone/js.png" alt="">
-        <p>JavaScript</p>
-      </div>
-      <div>
-        <img src="./icone/bootstrap.png" alt="">
-        <p>bootstrap</p>
-      </div>
-      <div>
-        <img src="./icone/github.png" alt="">
-        <p>github</p>
-      </div>
-      <div>
-        <img src="./icone/figma.png" alt="">
-        <p>figma</p>
-      </div>
-      <div>
-        <img src="./icone/illustrator.png" alt="">
-        <p>illustrator</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="project-section" id="progetti">
-    <div id="works">
-      <h4>My Works</h4>
-      <div id="intro">
-        <p>Ho iniziato il mio percorso di studi nella piattaforma di Start2Impact 
-          con il master di <strong>UX/UI Design</strong>.
-          Qui ho avuto la possibilità di approcciarmi al mio primo 
-          progetto incentrato sul concetto di identità visiva di un Brand: "MeditActive".
+    <section class="about-section">
+      <div id="intro-about">
+        <h2>Who am I?</h2>
+        <p><strong>Front End Developer</strong>
         </p>
-        <p>Durante gli studi ho scoperto la passione per lo sviluppo web e ho deciso di cambiare master, 
-          inziando il percorso di <strong>Front End Development</strong>.</p>
+
+        <p>Ciao! Sono una ragazza di 22 anni di Roma. 
+          Mi definisco una persona <strong>intraprendente e organizzata</strong>, 
+          mi piace avere il controllo su ciò che 
+          faccio e sugli eventi che mi circondano. <br> <br>Ho anche una <strong>vena creativa</strong>, che 
+          si esprime in modo particolare attraverso i miei hobby: 
+          adoro <strong>lavorare a maglia e all'uncinetto</strong>. 
+          Queste attività richiedono una precisione e 
+          un'attenzione incredibili, proprio come 
+          nello sviluppo di un'interfaccia web. 
+          <br>
+          Ed è proprio durante queste sfide che provo una grande 
+          soddisfazione nel trasformare le idee dalla mia mente in realtà.
+        </p>
+        <button><a href="./about-page.html">scopri di piu</a></button>
       </div>
-    </div> 
-    <div class="projects">
-      <div class="project-one">
+      <h3>skill & libraries</h3>
+      <div class="linguaggi">
         <div>
-          <h5>personal site</h5>
-          <p>front end developer <br>portfolio website<p>
+          <img src="./icone/html.png" alt="">
+          <p>HTML5</p>
         </div>
-        <button class="project-button" id="btn-one"><a href="./progetto-portfolio.html">see project</a></button>
-      </div>
-      <div class="project-two">
         <div>
-          <h5>work in progress</h5>
-          <p>work in<br>progress</p>
+          <img src="./icone/css-3.png" alt="">
+          <p>Css3</p>
         </div>
-        <button class="project-button" id="btn-two">work in progress</button>
-      </div>
-      <div class="project-three">
         <div>
-          <h5>meditactive</h5>
-          <p>progetto grafica<br>brand identity</p>
+          <img src="./icone/js.png" alt="">
+          <p>JavaScript</p>
         </div>
-        <button class="project-button" id="btn-three"><a href="./progetto-grafica.html">see project</a></button>
+        <div>
+          <img src="./icone/js.png" alt="">
+          <p>JQuery</p>
+        </div>
+        <div>
+          <img src="./icone/js.png" alt="">
+          <p>React.js</p>
+        </div>
+        <div>
+          <img src="./icone/bootstrap.png" alt="">
+          <p>Bootstrap</p>
+        </div>
+        <div>
+          <img src="./icone/github.png" alt="">
+          <p>github</p>
+        </div>
+        <div>
+          <img src="./icone/figma.png" alt="">
+          <p>figma</p>
+        </div>
+        <div>
+          <img src="./icone/illustrator.png" alt="">
+          <p>Illustrator</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- project section -->
+
+    <section class="project-section" id="progetti">
+      <div id="works">
+        <h4>My Works</h4>
+        <div id="intro">
+          <p>Ho iniziato il mio percorso di studi nella piattaforma di Start2Impact 
+            con il master di <strong>UX/UI Design</strong>.
+            Qui ho avuto la possibilità di approcciarmi al mio primo 
+            progetto incentrato sul concetto di identità visiva di un Brand: "MeditActive".
+          </p>
+          <p>Durante gli studi ho scoperto la passione per lo sviluppo web e ho deciso di cambiare master, 
+            inziando il percorso di <strong>Front End Development</strong>.</p>
+        </div>
+      </div> 
+      <div class="projects">
+        <div class="project-one">
+          <div>
+            <h5>personal site</h5>
+            <p>front end developer <br>portfolio website<p>
+          </div>
+          <button class="project-button" id="btn-one"><a href="./progetto-portfolio.html">see project</a></button>
+        </div>
+        <div class="project-two">
+          <div>
+            <h5>work in progress</h5>
+            <p>work in<br>progress</p>
+          </div>
+          <button class="project-button" id="btn-two"><a href="#">see project</a></button>
+        </div>
+        <div class="project-three">
+          <div>
+            <h5>meditactive</h5>
+            <p>progetto grafica<br>brand identity</p>
+          </div>
+          <button class="project-button" id="btn-three"><a href="./progetto-grafica.html">see project</a></button>
+        </div>
+      </div>
+    </section>
 
 
-  <footer id="footer">
-    <div>
-      <a href="https://github.com/mirirosca/RoscaMirela_Portfolio.git" target="_blank"><i class="fa-brands fa-github icona"></i></a>
-      <a href="https://www.linkedin.com/in/roscamiri/" target="_blank"><i class="fa-brands fa-linkedin icona"></i></a>
-      <a href="mailto:roscamiri@gmail.com" target="_blank"><i class="fa-regular fa-envelope icona"></i></a>
-    </div>
-      <p>contattami attraverso queste piattaforme</p>
-  </footer>
+    <footer id="footer">
+      <div>
+        <a href="https://github.com/mirirosca/RoscaMirela_Portfolio.git" target="_blank"><i class="fa-brands fa-github icona"></i></a>
+        <a href="https://www.linkedin.com/in/roscamiri/" target="_blank"><i class="fa-brands fa-linkedin icona"></i></a>
+        <a href="mailto:roscamiri@gmail.com" target="_blank"><i class="fa-regular fa-envelope icona"></i></a>
+      </div>
+        <p>contattami attraverso queste piattaforme</p>
+    </footer>
 
-  <script src="./index.js"></script>
+    <script src="./index.js"></script>
 
-</body>
+  </body>
 </html>
