@@ -102,40 +102,6 @@ header a {
   color: rgb(29, 63, 75);
 }
 
-/* change-theme icon style
-  sun & moon icons
- */
-
-/* header div:nth-child(2) {
-  position: absolute;
-  left: 50%;
-  right: 25%;
-}
-
-header div:nth-child(2) button {
-  padding: 10px;
-  background-color: transparent;
-  position: absolute;
-  top: -13px;
-  cursor: pointer;
-}
-
-#sun-icon {
-  color: rgb(255, 255, 255);
-  display: none;
-}
-
-header div:nth-child(2) i,
-.icona-menu,
-.icona-close {
-  font-size: 18px;
-  padding: 0;
-  margin: 0;
-} */
-
-/* third-div in header style 
-  project & contact & about me button
-*/
 
 .nav-bar {
   display: flex;

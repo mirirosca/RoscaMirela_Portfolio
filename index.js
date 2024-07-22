@@ -23,46 +23,6 @@ closeIcon.addEventListener('click', () => {
 });
 
 
-const moonIcon = document.getElementById('moon-icon');
-const sunIcon = document.getElementById('sun-icon'); 
-
-
-window.addEventListener('load', () => {
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    document.body.classList.add('dark-theme'); 
-    sunIcon.style.display = 'block';
-    moonIcon.style.display = 'none'; 
-  }
-});
-
-
-moonIcon.onclick = function() {
-  const body = document.body;
-  body.classList.toggle('dark-theme');
-
-
-  if (body.classList.contains('dark-theme')) {
-    localStorage.setItem('theme', 'dark');
-    sunIcon.style.display = 'block'; 
-    moonIcon.style.display = 'none'; 
-  } else {
-    localStorage.setItem('theme', 'light');
-    sunIcon.style.display = 'none'; 
-    moonIcon.style.display = 'block'; 
-  }
-};
-
-
-sunIcon.onclick = function() {
-  const body = document.body;
-  body.classList.remove('dark-theme');
-
-
-  localStorage.setItem('theme', 'light');
-  sunIcon.style.display = 'none'; 
-  moonIcon.style.display = 'block'; 
-};
 
 
 
